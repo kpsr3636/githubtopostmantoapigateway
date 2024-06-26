@@ -14,8 +14,8 @@ files[] = {"id":"33420634-c01d7997-a6dd-4165-97c1-4a0111c7eb7d","path":"OpenAPI 
 [config.relations.collections.metaData]
 
 [config.relations.apiDefinition]
-files[] = {"path":"githubtopostmantoapigateway.json.json","metaData":{}}
+files[] = {"path":"d8ae5822-1969-4019-924e-357c75a0a190.json","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
 type = openapi:3
-rootFiles[] = githubtopostmantoapigateway.json.json
+rootFiles[] = d8ae5822-1969-4019-924e-357c75a0a190.json
