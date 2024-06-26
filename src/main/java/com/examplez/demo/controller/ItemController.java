@@ -38,4 +38,14 @@ public class ItemController {
     public void deleteItem(@PathVariable Long id) {
         itemService.deleteItem(id);
     }
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, World!";
+    }
+
+    @GetMapping("/hello/{name}")
+    public String helloName(@PathVariable String name) {
+        return "Hello, " + name + "!";
+    }
 }
