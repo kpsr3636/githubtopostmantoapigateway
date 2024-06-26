@@ -2,6 +2,8 @@ package com.examplez.demo.controller;
 
 import com.examplez.demo.entity.Item;
 import com.examplez.demo.service.ItemService;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,10 +42,13 @@ public class ItemController {
     }
 
     @GetMapping("/hello")
+    @ApiOperation("Get a generic hello message")
     public String hello() {
         return "Hello, World!";
     }
 
+    @ApiOperation("Get a personalized hello message")
+    @ApiParam(name = "name", value = "Name of the person", example = "John")
     @GetMapping("/hello/{name}")
     public String helloName(@PathVariable String name) {
         return "Hello, " + name + "!";
