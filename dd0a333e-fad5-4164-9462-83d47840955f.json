@@ -29,7 +29,6 @@
           }
         },
         "x-amazon-apigateway-integration" : {
-          "type" : "http",
           "httpMethod" : "GET",
           "uri" : "http://example.com/items",
           "responses" : {
@@ -37,7 +36,8 @@
               "statusCode" : "200"
             }
           },
-          "passthroughBehavior" : "when_no_match"
+          "passthroughBehavior" : "when_no_match",
+          "type" : "http"
         }
       },
       "post" : {
@@ -65,7 +65,6 @@
           }
         },
         "x-amazon-apigateway-integration" : {
-          "type" : "http",
           "httpMethod" : "POST",
           "uri" : "http://example.com/items",
           "responses" : {
@@ -73,7 +72,8 @@
               "statusCode" : "200"
             }
           },
-          "passthroughBehavior" : "when_no_match"
+          "passthroughBehavior" : "when_no_match",
+          "type" : "http"
         }
       }
     },
@@ -93,7 +93,6 @@
           }
         },
         "x-amazon-apigateway-integration" : {
-          "type" : "http",
           "httpMethod" : "GET",
           "uri" : "http://example.com/update-api",
           "responses" : {
@@ -101,7 +100,8 @@
               "statusCode" : "200"
             }
           },
-          "passthroughBehavior" : "when_no_match"
+          "passthroughBehavior" : "when_no_match",
+          "type" : "http"
         }
       }
     },
@@ -129,7 +129,6 @@
           }
         },
         "x-amazon-apigateway-integration" : {
-          "type" : "http",
           "httpMethod" : "GET",
           "uri" : "http://example.com/items/{id}",
           "responses" : {
@@ -137,7 +136,8 @@
               "statusCode" : "200"
             }
           },
-          "passthroughBehavior" : "when_no_match"
+          "passthroughBehavior" : "when_no_match",
+          "type" : "http"
         }
       },
       "put" : {
@@ -173,7 +173,6 @@
           }
         },
         "x-amazon-apigateway-integration" : {
-          "type" : "http",
           "httpMethod" : "PUT",
           "uri" : "http://example.com/items/{id}",
           "responses" : {
@@ -181,7 +180,8 @@
               "statusCode" : "200"
             }
           },
-          "passthroughBehavior" : "when_no_match"
+          "passthroughBehavior" : "when_no_match",
+          "type" : "http"
         }
       },
       "delete" : {
@@ -201,7 +201,6 @@
           }
         },
         "x-amazon-apigateway-integration" : {
-          "type" : "http",
           "httpMethod" : "DELETE",
           "uri" : "http://example.com/items/{id}",
           "responses" : {
@@ -209,7 +208,8 @@
               "statusCode" : "200"
             }
           },
-          "passthroughBehavior" : "when_no_match"
+          "passthroughBehavior" : "when_no_match",
+          "type" : "http"
         }
       }
     }
